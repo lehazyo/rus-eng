@@ -1,0 +1,48 @@
+ABBR,ARTICLE,ASIDE,AUDIO,BB,CANVAS,DATAGRID,DATALIST,DETAILS,DIALOG,FIGURE,FOOTER,HEADER,MARK,MENU,METER,NAV,OUTPUT,PROGRESS,SECTION,TIME,VIDEO {display:block;}
+HTML,BODY,DIV,SPAN,APPLET,OBJECT,IFRAME,/*H1,H2,H3,H4,H5,H6,P,*/
+BLOCKQUOTE,PRE,A,ABBR,ACRONYM,ADDRESS,BIG,CITE,CODE,DEL,DFN,
+EM,FONT,IMG,INS,KBD,Q,S,SAMP,SMALL,STRIKE,STRONG,SUB,SUP,
+TT,VAR,HR,B,U,I,CENTER,DL,DT,DD,OL,UL,LI,FIELDSET,FORM,
+LABEL,LEGEND,TABLE,CAPTION,TBODY,TFOOT,THEAD,TR,TH,TD {padding:0;margin:0;border:none;outline:none;font-family:inherit;font-size:100%;}
+DFN,I,CITE,VAR,ADDRESS/*,EM*/ {font-style:normal;}
+/*TH,B,STRONG,H1,H2,H3,H4,H5,H6{font-weight:normal;}*/
+TEXTAREA,INPUT,SELECT{font-family:inherit;font-size:1em;}
+BLOCKQUOTE,Q {quotes:none;}
+Q:before,Q:after,
+BLOCKQUOTE:before,
+BLOCKQUOTE:after {content:'';content:none;}
+/*OL,*/UL {list-style:none;}
+INS {text-decoration:none;}
+DEL {text-decoration:line-through;}
+TABLE {border-collapse:collapse;border-spacing:0;}
+CAPTION,TH,TD {text-align:left;}
+:focus {outline:none;}
+TD  {vertical-align: top;}
+
+body{font-family:"Arial", sans-serif;font-size:16px;background:#ddd;}
+.main_wrapper{max-width:900px;margin:auto;box-shadow:0 0 20px rgba(0,0,0,.2);padding:20px 20px 20px 20px;background:#fff;}
+
+.detector__wrapper{}
+.detector__header{margin:0 0 30px 0;}
+.detector__description{}
+.detector__textarea_wrapper{}
+.detector__textarea_header{margin:30px 0 10px 0;font-weight:bold;}
+.detector__textarea{min-height:200px;font-size:16px;}
+.detector__result_header{margin:30px 0 10px 0;font-weight:bold;}
+.detector__result{}
+
+.detector_letter{display:inline-block;/*min-width:18px;min-height:28px;*/font-size:20px;position:relative;margin:0 1px 10px 0;border-radius:5px;padding:0 4px 0 4px;background:#ddd;}
+  .detector_letter--russian{background:#ff8989;}
+  .detector_letter--english{background:#b2b2ff;font-family:"Times New Roman", serif;}
+
+.detector__result_explanation{border:1px solid #ddd;border-radius:10px;padding:10px 10px 10px 10px;text-align:center;margin:0 0 20px 0;}
+.explanation__item{display:inline-block;vertical-align:top;margin:0 0 0 20px;}
+  .explanation__item:first-child{margin-left:0;}
+.explanation__color{display:inline-block;vertical-align:middle;width:16px;height:16px;margin:0 8px 0 0;}
+  .explanation__color--russian{background:#ff8989;}
+  .explanation__color--english{background:#b2b2ff;}
+  .explanation__color--neutral{background:#ddd;}
+.explanation__label{display:inline-block;vertical-align:middle;}
+  .explanation__label--russian{}
+  .explanation__label--english{font-family:"Times New Roman", serif;}
+.explanation__stats{display:inline-block;vertical-align:middle;}

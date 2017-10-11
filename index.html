@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/rus_eng_detector.js"></script>
+</head>
+<body>
+  <div class="
+    container
+    main_wrapper
+  ">
+    <div class="detector__wrapper">
+      <h1 class="detector__header">Нахождение русских/английских символов в тексте</h1>
+      <div class="detector__description">
+        <p>
+          Эта программа позволяет определить, какие символы в тексте написаны на русской раскладке, а какие — на английской. Это бывает особенно полезно в случае с буквой «C», так как  обоих языках она находится на одной кнопке.
+        </p>
+        <p>
+          Ниже показан пример работы. Вы можете ввести свой текст в поле ниже.
+        </p>
+      </div>
+      <div class="detector__textarea_wrapper">
+        <div class="detector__textarea_header">
+          Исходный текст:
+        </div>
+        <textarea
+          class="
+            form-control
+            detector__textarea
+          "
+        >
+Русская С
+Английская C
+Съешь eщё этих мягких фpанцузских бyлок, дa выпей же чаю
+The quiсk brown fox jumps оver the lazy dog</textarea>
+
+        <div class="detector__result_header">
+          Результат:
+        </div>
+        <div class="detector__result_explanation">
+          <span class="explanation__item">
+            <span class="
+              explanation__color
+              explanation__color--russian
+            "></span>
+            <span class="
+              explanation__label
+              explanation__label--russian
+            ">русский</span>
+            <span class="
+              explanation__stats
+              explanation__stats--russian
+            "></span>
+          </span>
+
+          <span class="explanation__item">
+            <span class="
+              explanation__color
+              explanation__color--english
+            "></span>
+            <span class="
+              explanation__label
+              explanation__label--english
+            ">english</span>
+            <span class="
+              explanation__stats
+              explanation__stats--english
+            "></span>
+          </span>
+
+          <span class="explanation__item">
+            <span class="
+              explanation__color
+              explanation__color--neutral
+            "></span>
+            <span class="
+              explanation__label
+              explanation__label--neutral
+            ">без указания языка</span>
+            <span class="
+              explanation__stats
+              explanation__stats--neutral
+            "></span>
+          </span>
+        </div>
+        <div class="detector__result"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
