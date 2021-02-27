@@ -61,6 +61,11 @@ class RusEngDetector {
     };
 
     this.setTestContent();
+
+    document.fonts.ready.then(() => {
+      this.setLetterDimensions();
+      this.renderCanvas();
+    });
   }
 
   onInput() {
